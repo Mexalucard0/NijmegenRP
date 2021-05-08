@@ -62,7 +62,7 @@ Config.Car = {
 	Shop = true, -- true = Use Car Shop | false = Does Opposite
 	Blips = true, -- true = Use Car Blip | false = Does Opposite
 	Blip = {Coords = vector3(-33.7, -1102.0, 25.4), Sprite = 326, Color = 2, Display = 4, Scale = 1.0},
-	License = true, -- Requires License to Buy Cars.
+	License = false, -- Requires License to Buy Cars.
 	ResellPerc = 50 -- The Resell % of Vehicles Sold | Example: $10,000 / 50% = $5,000 Back
 }
 
