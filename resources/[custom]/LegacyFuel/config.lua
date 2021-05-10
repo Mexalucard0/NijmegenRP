@@ -14,7 +14,7 @@ Config.FuelDecor = "_FUEL_LEVEL"
 Config.DisableKeys = {0, 22, 23, 24, 29, 30, 31, 37, 44, 56, 82, 140, 166, 167, 168, 170, 288, 289, 311, 323}
 
 -- Want to use the HUD? Turn this to true.
-Config.EnableHUD = true
+Config.EnableHUD = false
 
 -- Configure blips here. Turn both to false to disable blips all together.
 Config.ShowNearestGasStationOnly = true
@@ -91,16 +91,16 @@ Config.Classes = {
 
 -- The left part is at percentage RPM, and the right is how much fuel (divided by 10) you want to remove from the tank every second
 Config.FuelUsage = {
-	[1.0] = 1.4,
-	[0.9] = 1.2,
-	[0.8] = 1.0,
-	[0.7] = 0.9,
-	[0.6] = 0.8,
-	[0.5] = 0.7,
-	[0.4] = 0.5,
-	[0.3] = 0.4,
-	[0.2] = 0.2,
-	[0.1] = 0.1,
+	[1.0] = 0.14,
+	[0.9] = 0.12,
+	[0.8] = 0.1,
+	[0.7] = 0.09,
+	[0.6] = 0.08,
+	[0.5] = 0.07,
+	[0.4] = 0.05,
+	[0.3] = 0.04,
+	[0.2] = 0.02,
+	[0.1] = 0.01,
 	[0.0] = 0.0,
 }
 
