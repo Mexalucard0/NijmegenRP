@@ -30,14 +30,14 @@ div.separator { display: block; clear: both; width: 100%; }
 
 .icon {display: block;position: relative;padding: 10px 8px;margin: 10px 5px 0 5px;width: 350px;height: 30px;border-radius: 1px;overflow: hidden;background: rgba(16, 23, 39, 0.35);border-bottom: 2px solid rgba(7, 138, 185, 0.96);}
 
-.icon i {position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);color: #FFF;z-index: 11;font-size: 15px;}
+.icon i {position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);color: #000;z-index: 11;font-size: 15px;}
 .icon img {width: 16px;margin: -3px 0 0 0;}
 .icon span {display: block;position: absolute;left: 50%;bottom: 0;transform: translate(-50%,0);width: 100%;height: 100%;}
 
 .icon.text {/* display: inline-block; */overflow: visible;width: auto;padding: 0;}
-.icon.text i {display: inline-block;float: left;transform: translate(0%,0%);left: 0;top: 0;position: relative;padding: 10px 8px;width: 30px;height: 30px;/* border-radius: 5px; */color: #FFF;}
+.icon.text i {display: inline-block;float: left;transform: translate(0%,0%);left: 0;top: 0;position: relative;padding: 10px 8px;width: 30px;height: 30px;/* border-radius: 5px; */color: #000;}
 .icon.text i:before { position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); }
-.icon.text span {position: relative;width: auto;height: auto;left: 0;transform: translate(0,0);display: inline-block;font-size: 10px;padding: 7px 15px 0 10px;font-weight: 400;color: #FFF;}
+.icon.text span {position: relative;width: auto;height: auto;left: 0;transform: translate(0,0);display: inline-block;font-size: 10px;padding: 7px 15px 0 10px;font-weight: 400;color: #000;}
 
 
 .icon.dying:not(.customstatus) span { animation: trew-status-blink 500ms infinite; }
@@ -48,12 +48,12 @@ div.separator { display: block; clear: both; width: 100%; }
 .info.server {top: 10px;right: 15px;width: 100px;height: 100px;}
 .info.server #server img { max-width: 100%; opacity: 0.75; }
 .info.player {top: 30px;right: 20px;text-align: right;}
-.info.player #job span {font-size: 15px;color: #FFF;font-weight: 300;padding: 10px;background: rgba(16, 23, 39, 0.75);text-transform: uppercase;text-align: center;border-left: 2px solid #078ab9;border-radius: 0.3vh;}
+.info.player #job span {font-size: 15px;color: #000;font-weight: 300;padding: 10px;background: rgba(16, 23, 39, 0.75);text-transform: uppercase;text-align: center;border-left: 2px solid #078ab9;border-radius: 0.3vh;}
 .info.player #money {/* clear: both; */position: relative;float: right;/* margin-top: 70px; */ margin-top: 10px; }
-.info.player #money #wallet i {background: rgba(16, 23, 39, 0.75);    border-bottom: 2px  #078ab9;}
+.info.player #money #wallet i {background: rgba(252, 111, 111, 1);    border-bottom: 2px  #fc5050;}
 .info.player #money #blackMoney i {
-  background: rgba(16, 23, 39, 0.75);
-  border-bottom: 2px  #078ab9;
+  background: rgba(252, 111, 111, 1);
+  border-bottom: 2px  #fc5050;
 }
-.info.player #money #bank i {background: rgba(16, 23, 39, 0.75);    border-bottom: 2px  #078ab9;}
-.info.player #money #society i {background: rgba(16, 23, 39, 0.75);    border-bottom: 2px  #078ab9;}
+.info.player #money #bank i {background: rgba(252, 111, 111, 1);    border-bottom: 2px  #fc5050;}
+.info.player #money #society i {background: rgba(252, 111, 111, 1);    border-bottom: 2px  #fc5050;}
