@@ -4,7 +4,7 @@ Config.Locale = 'en'
 
 Config.ShowBlips = true
 Config.OnlyBank = true
-Config.Animation = false
+Config.Animation = true
 Config.AnimationTime = 2500 -- Miliseconds
 
 Config.Bank = {
