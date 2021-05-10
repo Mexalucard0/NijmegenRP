@@ -4,9 +4,9 @@ Config.Locale = 'en'
 Config.Main = {
 	DrawDistance = 20,
 	-- looks like this: 'LLL NNN' The maximum plate length is 8 chars (including spaces & symbols), don't go past it!
-	PlateLetters = 3,
-	PlateNumbers = 3,
-	PlateUseSpace = true
+	PlateLetters = 2,
+	PlateNumbers = 4,
+	PlateUseSpace = false
 }
 
 Config.Ambulance = {
@@ -63,7 +63,7 @@ Config.Car = {
 	Blips = true, -- true = Use Car Blip | false = Does Opposite
 	Blip = {Coords = vector3(-33.7, -1102.0, 25.4), Sprite = 326, Color = 2, Display = 4, Scale = 1.0},
 	License = false, -- Requires License to Buy Cars.
-	ResellPerc = 50 -- The Resell % of Vehicles Sold | Example: $10,000 / 50% = $5,000 Back
+	ResellPerc = 60 -- The Resell % of Vehicles Sold | Example: $10,000 / 50% = $5,000 Back
 }
 
 Config.Truck = {
