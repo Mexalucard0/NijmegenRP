@@ -14,7 +14,7 @@ Config.Main = {
 	RenameMin = 4, -- Minimum Characters
 	RenameMax = 61, -- Max Characters + 1 (If you want Max Characters to be 45 then set it 46)
 	TruckShop = true, -- true = Using esx_advancedvehicleshop Truck Dealership
-	LegacyFuel = false -- ture = Using LegacyFuel & you want Fuel to Save
+	LegacyFuel = true -- ture = Using LegacyFuel & you want Fuel to Save
 }
 
 Config.Blips = {
@@ -86,7 +86,7 @@ Config.Boats = {
 Config.Cars = {
 	Garages = true, -- true = Allows use of Car Garages.
 	Blips = true, -- true = Use Car Blips.
-	PoundP = 300, -- How much it Costs to get Vehicles from Car Pound.
+	PoundP = 100, -- How much it Costs to get Vehicles from Car Pound.
 	Markers = {
 		Points = {Type = 1, r = 0, g = 255, b = 0, x = 1.5, y = 1.5, z = 1.0}, -- Green Color / Standard Size Circle.
 		Delete = {Type = 1, r = 255, g = 0, b = 0, x = 5.0, y = 5.0, z = 1.0}, -- Red Color / Big Size Circle.
