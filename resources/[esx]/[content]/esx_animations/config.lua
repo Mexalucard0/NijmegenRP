@@ -140,23 +140,6 @@ Config.Animations = {
 	    	{label = "Sassy", type = "attitude", data = {lib = "move_f@sassy", anim = "move_f@sassy"}},	
 	    	{label = "Arrogant", type = "attitude", data = {lib = "move_f@arrogant@a", anim = "move_f@arrogant@a"}},
 		}
-	},
-	{
-		name  = 'porn',
-		label = 'NSFW',
-		items = {
-	    	{label = "Man receiving in car", type = "anim", data = {lib = "oddjobs@towing", anim = "m_blow_job_loop"}},
-	    	{label = "Woman giving in car", type = "anim", data = {lib = "oddjobs@towing", anim = "f_blow_job_loop"}},
-	    	{label = "Man on bottom in car", type = "anim", data = {lib = "mini@prostitutes@sexlow_veh", anim = "low_car_sex_loop_player"}},
-	    	{label = "Woman on top in car", type = "anim", data = {lib = "mini@prostitutes@sexlow_veh", anim = "low_car_sex_loop_female"}},
-	    	{label = "Scratch nuts", type = "anim", data = {lib = "mp_player_int_uppergrab_crotch", anim = "mp_player_int_grab_crotch"}},
-	    	{label = "Hooker 1", type = "anim", data = {lib = "mini@strip_club@idles@stripper", anim = "stripper_idle_02"}},
-	    	{label = "Hooker 2", type = "scenario", data = {anim = "WORLD_HUMAN_PROSTITUTE_HIGH_CLASS"}},
-	    	{label = "Hooker 3", type = "anim", data = {lib = "mini@strip_club@backroom@", anim = "stripper_b_backroom_idle_b"}},
-	    	{label = "Strip Tease 1", type = "anim", data = {lib = "mini@strip_club@lap_dance@ld_girl_a_song_a_p1", anim = "ld_girl_a_song_a_p1_f"}},
-	    	{label = "Strip Tease 2", type = "anim", data = {lib = "mini@strip_club@private_dance@part2", anim = "priv_dance_p2"}},
-	    	{label = "Stip Tease On Knees", type = "anim", data = {lib = "mini@strip_club@private_dance@part3", anim = "priv_dance_p3"}},
-			}
-	},
+	}
 
 }
