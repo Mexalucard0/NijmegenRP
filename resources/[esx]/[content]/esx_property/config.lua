@@ -7,9 +7,9 @@ Config.RoomMenuMarkerColor = {r = 102, g = 204, b = 102}
 Config.MarkerType = 1
 
 Config.RentModifier = 200 -- rent price: <property price> / <rent modifier> (rounded)
-Config.SellModifier = 2   -- sell price: <property price> / <sell modifier> (rounded)
+Config.SellModifier = 1.3   -- sell price: <property price> / <sell modifier> (rounded)
 
 Config.Properties = {}
 
-Config.EnablePlayerManagement = true -- If set to true you use esx_realestateagentjob
+Config.EnablePlayerManagement = false -- If set to true you use esx_realestateagentjob
 Config.Locale = 'en'
