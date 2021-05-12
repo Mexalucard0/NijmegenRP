@@ -19,7 +19,7 @@ AddEventHandler('esx_drugs:sellWeed', function()
 	else
 		xPlayer.showNotification(_U('dealer_notenough'))
 	end
-end
+end)
 
 RegisterServerEvent('esx_drugs:sellDrug')
 AddEventHandler('esx_drugs:sellDrug', function(itemName, amount)
