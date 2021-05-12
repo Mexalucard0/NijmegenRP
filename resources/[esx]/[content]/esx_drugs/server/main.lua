@@ -15,7 +15,7 @@ AddEventHandler('esx_drugs:sellWeed', function()
 	if amount > 0 then
 		xPlayer.removeInventoryItem('marijuana', amount)
 		xPlayer.addAccountMoney('black_money', amount * price)
-		xPlayer.showNotification(_U('dealer_sold', amount, "Marijuana", ESX.Math.GroupDigits(price)))
+		xPlayer.showNotification(_U('dealer_sold', amount, "Marijuana", ESX.Math.GroupDigits(amount*price)))
 	else
 		xPlayer.showNotification(_U('dealer_notenough'))
 	end
