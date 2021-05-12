@@ -117,7 +117,7 @@ AddEventHandler('esx_drugs:processCannabis', function()
 						playersProcessingCannabis[_source] = nil
 					end)
 				else
-					-- Wait(Config.Delays.WeedProcessing)
+					Wait(Config.Delays.WeedProcessing)
 				end	
 			end
 		else
