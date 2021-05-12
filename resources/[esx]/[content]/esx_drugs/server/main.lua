@@ -5,6 +5,23 @@ local alive = true
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
+
+RegisterServerEvent('esx_drugs:sellWeed')
+AddEventHandler('esx_drugs:sellWeed', function()
+	local xPlayer = ESX.GetPlayerFromId(source)
+	local amount = xPlayer.getInventoryItem('marijuana').count
+
+	local price = Config.DrugDealerItems['marijuana']
+
+	if amount > 0 then
+		xPlayer.removeInventoryItem('marijuana', amount)
+		xPlayer.addAccountMoney('black_money', amount * price)
+		xPlayer.showNotification(_U('dealer_sold', amount, "Marijuana", ESX.Math.GroupDigits(amount*price)))
+	else
+		xPlayer.showNotification(_U('dealer_notenough'))
+	end
+end)
+
 RegisterServerEvent('esx_drugs:sellDrug')
 AddEventHandler('esx_drugs:sellDrug', function(itemName, amount)
 	local xPlayer = ESX.GetPlayerFromId(source)
@@ -56,7 +73,7 @@ end)
 RegisterServerEvent('esx_drugs:pickedUpCannabis')
 AddEventHandler('esx_drugs:pickedUpCannabis', function()
 	local xPlayer = ESX.GetPlayerFromId(source)
-	local cime = math.random(5,10)
+	local cime = math.random(1,3)
 
 	if xPlayer.canCarryItem('cannabis', cime) then
 		xPlayer.addInventoryItem('cannabis', cime)
@@ -94,13 +111,13 @@ AddEventHandler('esx_drugs:processCannabis', function()
 		local xCannabis = xPlayer.getInventoryItem('cannabis')
 		local can = true
 		outofbound = false
-    if xCannabis.count >= 3 then
+    if xCannabis.count >= 4 then
       while outofbound == false and can do
 				if playersProcessingCannabis[_source] == nil then
 					playersProcessingCannabis[_source] = ESX.SetTimeout(Config.Delays.WeedProcessing , function()
             if xCannabis.count >= 3 then
-              if xPlayer.canSwapItem('cannabis', 3, 'marijuana', 1) then
-                xPlayer.removeInventoryItem('cannabis', 3)
+              if xPlayer.canSwapItem('cannabis', 4, 'marijuana', 1) then
+                xPlayer.removeInventoryItem('cannabis', 4)
                 xPlayer.addInventoryItem('marijuana', 1)
 								xPlayer.showNotification(_U('weed_processed'))
 							else
