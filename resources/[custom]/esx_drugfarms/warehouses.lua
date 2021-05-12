@@ -313,7 +313,16 @@ Citizen.CreateThread(function()
             ESX.ShowHelpNotification(_U('press_to_sell_weed'))
             if IsControlPressed(0, 51) then
                 Citizen.Wait(500)
-                TriggerServerEvent('esx_drugs:sellDrug')
+                ESX.UI.Menu.Open('default', GetCurrentResourceName(), 'drug_shop', {
+                    title    = _U('dealer_title'),
+                    align    = 'top-left',
+                    elements = elements
+                }, function(data, menu)
+                    TriggerServerEvent('esx_drugs:sellDrug', data.current.name, data.current.value)
+                end, function(data, menu)
+                    menu.close()
+                    menuOpen = false
+                end)
             end
         end
 
