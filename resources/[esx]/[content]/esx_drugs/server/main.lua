@@ -17,7 +17,7 @@ AddEventHandler('esx_drugs:sellWeed', function()
 		xPlayer.addAccountMoney('black_money', amount * price)
 		xPlayer.showNotification(_U('dealer_sold', amount, "Marijuana", ESX.Math.GroupDigits(price)))
 	else
-		xPlayer.showNotification(_U('dealer_notenough')
+		xPlayer.showNotification(_U('dealer_notenough'))
 	end
 end
 
