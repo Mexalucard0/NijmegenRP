@@ -6,7 +6,7 @@ Config.AllowPolice = true -- If true, police will be able to search players' tru
 Config.Locale   = 'en'
 
  -- Limit, unit can be whatever you want. Originally grams (as average people can hold 25kg)
-Config.Limit = 25000
+Config.Limit = 50000
 
 -- Default weight for an item:
 	-- weight == 0 : The item do not affect character inventory weight
@@ -96,6 +96,8 @@ Config.localWeight = {
     WEAPON_PISTOL           = 5000,
     money                   = 10,
 	black_money             = 10,
+    marijuana               = 500,
+    cannabis                = 250
 }
 
 Config.VehicleLimit = {
@@ -106,12 +108,12 @@ Config.VehicleLimit = {
     [4] = 40000, --Muscle
     [5] = 25000, --Sports Classics
     [6] = 40000, --Sports
-    [7] = 150000, --Super
+    [7] = 5000, --Super
     [8] = 0, --Motorcycles
     [9] = 150000, --Off-road
     [10] = 800000, --Industrial
     [11] = 100000, --Utility
-    [12] = 150000, --Vans
+    [12] = 350000, --Vans
     [13] = 0, --Cycles
     [14] = 100000, --Boats
     [15] = 0, --Helicopters
