@@ -294,6 +294,17 @@ Citizen.CreateThread(function()
                 TriggerServerEvent('esx_drugs:pickedUpCannabis')
             end
         end
+
+        -- Weed processing point
+        DrawMarker(1, 1037.62, -3205.4, -38.17 - 1.0001, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 13, 232, 255, 155, 0, 0, 2, 0, 0, 0, 0)
+        if GetDistanceBetweenCoords(playerCoords.x, playerCoords.y, playerCoords.z, 1037.62, -3205.4, -38.17, true) <= 3.0 then
+            -- TriggerEvent("fs_freemode:displayHelp", i18n.translate("exit_warehouse"))
+            ESX.ShowHelpNotification(_U('press_to_process_weed'))
+            if IsControlPressed(0, 51) then
+                Citizen.Wait(500)
+                TriggerServerEvent('esx_drugs:processCannabis')
+            end
+        end
     end
 end)
 
