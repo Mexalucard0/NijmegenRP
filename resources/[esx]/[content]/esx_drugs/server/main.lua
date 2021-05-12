@@ -5,22 +5,6 @@ local alive = true
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
-RegisterServerEvent('esx_drugs:sellWeed')
-AddEventHandler('esx_drugs:sellWeed', function()
-	local xPlayer = ESX.GetPlayerFromId(source)
-	local amount = xPlayer.getInventoryItem('marijuana').count
-
-	local price = Config.DrugDealerItems['marijuana']
-
-	if amount > 0 then
-		xPlayer.removeInventoryItem('marijuana', amount)
-		xPlayer.addAccountMoney('black_money', amount * price)
-		xPlayer.showNotification(_U('dealer_sold', amount, "Marijuana", ESX.Math.GroupDigits(amount*price)))
-	else
-		xPlayer.showNotification(_U('dealer_notenough'))
-	end
-end)
-
 RegisterServerEvent('esx_drugs:sellDrug')
 AddEventHandler('esx_drugs:sellDrug', function(itemName, amount)
 	local xPlayer = ESX.GetPlayerFromId(source)
