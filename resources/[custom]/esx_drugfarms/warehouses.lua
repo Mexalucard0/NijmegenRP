@@ -313,7 +313,7 @@ Citizen.CreateThread(function()
             ESX.ShowHelpNotification(_U('press_to_sell_weed'))
             if IsControlPressed(0, 51) then
                 Citizen.Wait(500)
-                TriggerServerEvent('nrp_drugs:sellWeed')
+                TriggerServerEvent('esx_drugs:sellWeed')
             end
         end
 
