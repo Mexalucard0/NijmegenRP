@@ -288,15 +288,10 @@ Citizen.CreateThread(function()
         DrawMarker(1, 1057.55, -3197.28, -39.13 - 1.0001, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 13, 232, 255, 155, 0, 0, 2, 0, 0, 0, 0)
         if GetDistanceBetweenCoords(playerCoords.x, playerCoords.y, playerCoords.z, 1057.55, -3197.28, -39.13, true) <= 3.0 then
             -- TriggerEvent("fs_freemode:displayHelp", i18n.translate("exit_warehouse"))
-            ESX.ShowHelpNotification(_U('press_to_exit'))
+            ESX.ShowHelpNotification(_U('press_to_collect_weed'))
             if IsControlPressed(0, 51) then
-                DoScreenFadeOut(1000)
                 Citizen.Wait(1500)
-
-                SetEntityCoords(PlayerPedId(), 1190.4223632812, -3329.8059082032, 5.6322560310364, 239.736)
-
-                Citizen.Wait(1000)
-                DoScreenFadeIn(1000)
+                TriggerServerEvent('esx_drugs:pickedUpCannabis')
             end
         end
     end

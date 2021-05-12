@@ -10,4 +10,5 @@ Locales['nl'] = {
     ['biker_clubhouse'] = "Clubhouse",
     ['press_to_enter'] = 'Druk op ~INPUT_CONTEXT~ om het gebouw binnen te gaan.',
     ['press_to_exit'] = 'Druk op ~INPUT_CONTEXT~ om het gebouw te verlaten.',
+    ['press_to_collect_weed'] = 'Druk op ~INPUT_CONTEXT~ om wiet bladeren te plukken.'
 }
