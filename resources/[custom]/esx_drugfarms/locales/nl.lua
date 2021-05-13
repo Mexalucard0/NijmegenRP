@@ -12,5 +12,6 @@ Locales['nl'] = {
     ['press_to_exit'] = 'Druk op ~INPUT_CONTEXT~ om het gebouw te verlaten.',
     ['press_to_collect_weed'] = 'Druk op ~INPUT_CONTEXT~ om wiet bladeren te plukken.',
     ['press_to_process_weed'] = 'Druk op ~INPUT_CONTEXT~ om de wiet in zakjes te stoppen.',
-    ['press_to_sell_weed'] = 'Druk op ~INPUT_CONTEXT~ om wiet te verkopen.'
+    ['press_to_sell_weed'] = 'Druk op ~INPUT_CONTEXT~ om wiet te verkopen.',
+    ['press_to_launder_money'] = 'Druk op ~INPUT_CONTEXT~ om je zwarte geld wit te wassen.'
 }
