@@ -22,6 +22,15 @@ AddEventHandler('esx_drugs:sellWeed', function()
 	end
 end)
 
+RegisterServerEvent('esx_drugs:launderMoney')
+AddEventHandler('esx_drugs:launderMoney', function()
+	local xPlayer = ESX.GetPlayerFromId(source)
+	local dirty = xPlayer.getAccount('black_money').money
+	
+	xPlayer.removeAccountMoney('black_money', dirty)
+	xPlayer.addMoney(dirty * 0.85)
+end)
+
 RegisterServerEvent('esx_drugs:sellDrug')
 AddEventHandler('esx_drugs:sellDrug', function(itemName, amount)
 	local xPlayer = ESX.GetPlayerFromId(source)
