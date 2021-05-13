@@ -29,6 +29,8 @@ AddEventHandler('esx_drugs:launderMoney', function()
 	
 	xPlayer.removeAccountMoney('black_money', dirty)
 	xPlayer.addMoney(dirty * 0.85)
+
+	xPlayer.showNotification(_U('money_laundered', dirty, dirty*0.85))
 end)
 
 RegisterServerEvent('esx_drugs:sellDrug')

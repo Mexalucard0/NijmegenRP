@@ -6,9 +6,12 @@ Locales ['en'] = {
   ['weed_processprompt'] = 'press ~INPUT_CONTEXT~ to start ~g~Process Cannabis~s~.',
   ['weed_processingstarted'] = 'processing ~g~Cannabis~s~ into ~g~Marijuana~s~...',
   ['weed_processingfull'] = 'processing ~r~canceled~s~ due to full inventory!',
-  ['weed_processingenough'] = 'you must have ~b~3x~s~ ~g~Cannabis~s~ in order to process.',
-  ['weed_processed'] = 'you\'ve processed ~b~3x~s~ ~g~Cannabis~s~ to ~b~1x~s~ ~g~Marijuana~s~',
+  ['weed_processingenough'] = 'you must have ~b~4x~s~ ~g~Cannabis~s~ in order to process.',
+  ['weed_processed'] = 'you\'ve processed ~b~4x~s~ ~g~Cannabis~s~ to ~b~1x~s~ ~g~Marijuana~s~',
   ['weed_processingtoofar'] = 'the processing has been ~r~canceled~s~ due to you abandoning the area.',
+
+  -- Money laundering
+  ['money_laundered'] = 'You cleaned ~r~%s~s~ dirty money and got: ~g~%s~s~ clean money.',
 
   -- drug dealer
   ['dealer_prompt'] = 'press ~INPUT_CONTEXT~ to talk with the ~r~Drug Dealer~s~.',
