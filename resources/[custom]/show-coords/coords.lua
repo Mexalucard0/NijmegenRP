@@ -29,38 +29,38 @@ Citizen.CreateThread(function()
 		roundh = tonumber(string.format("%.2f", heading))
 		DrawTxt("~r~H:~s~ "..roundh, 0.50, 0.00)
 
-        local rx,ry,rz = table.unpack(GetEntityRotation(PlayerPedId(), 1))
-		DrawTxt("~r~RX:~s~ "..tonumber(string.format("%.2f", rx)), 0.38, 0.03)
-		DrawTxt("~r~RY:~s~ "..tonumber(string.format("%.2f", ry)), 0.44, 0.03)
-		DrawTxt("~r~RZ:~s~ "..tonumber(string.format("%.2f", rz)), 0.495, 0.03)
+        -- local rx,ry,rz = table.unpack(GetEntityRotation(PlayerPedId(), 1))
+		-- DrawTxt("~r~RX:~s~ "..tonumber(string.format("%.2f", rx)), 0.38, 0.03)
+		-- DrawTxt("~r~RY:~s~ "..tonumber(string.format("%.2f", ry)), 0.44, 0.03)
+		-- DrawTxt("~r~RZ:~s~ "..tonumber(string.format("%.2f", rz)), 0.495, 0.03)
 	
-		speed = GetEntitySpeed(PlayerPedId())
-		rounds = tonumber(string.format("%.2f", speed))
-		DrawTxt("~r~Player Speed: ~s~"..rounds, 0.40, 0.92)
+		-- speed = GetEntitySpeed(PlayerPedId())
+		-- rounds = tonumber(string.format("%.2f", speed))
+		-- DrawTxt("~r~Player Speed: ~s~"..rounds, 0.40, 0.92)
 
-		health = GetEntityHealth(PlayerPedId())
-		DrawTxt("~r~Player Health: ~s~"..health, 0.40, 0.95)
+		-- health = GetEntityHealth(PlayerPedId())
+		-- DrawTxt("~r~Player Health: ~s~"..health, 0.40, 0.95)
 
-		camRotX = GetGameplayCamRot().x
-		DrawTxt("~r~CR X: ~s~"..tonumber(string.format("%.2f", camRotX)), 0.36, 0.88)
+		-- camRotX = GetGameplayCamRot().x
+		-- DrawTxt("~r~CR X: ~s~"..tonumber(string.format("%.2f", camRotX)), 0.36, 0.88)
 
-		camRotY = GetGameplayCamRot().y
-		DrawTxt("~r~CR Y: ~s~"..tonumber(string.format("%.2f", camRotY)), 0.44, 0.88)
+		-- camRotY = GetGameplayCamRot().y
+		-- DrawTxt("~r~CR Y: ~s~"..tonumber(string.format("%.2f", camRotY)), 0.44, 0.88)
 
-		camRotZ = GetGameplayCamRot().z
-		DrawTxt("~r~CR Z: ~s~"..tonumber(string.format("%.2f", camRotZ)), 0.51, 0.88)
+		-- camRotZ = GetGameplayCamRot().z
+		-- DrawTxt("~r~CR Z: ~s~"..tonumber(string.format("%.2f", camRotZ)), 0.51, 0.88)
 
-		veheng = GetVehicleEngineHealth(GetVehiclePedIsUsing(PlayerPedId()))
-		vehbody = GetVehicleBodyHealth(GetVehiclePedIsUsing(PlayerPedId()))
-		if IsPedInAnyVehicle(PlayerPedId(), 1) then
-			vehenground = tonumber(string.format("%.2f", veheng))
-			vehbodround = tonumber(string.format("%.2f", vehbody))
+		-- veheng = GetVehicleEngineHealth(GetVehiclePedIsUsing(PlayerPedId()))
+		-- vehbody = GetVehicleBodyHealth(GetVehiclePedIsUsing(PlayerPedId()))
+		-- if IsPedInAnyVehicle(PlayerPedId(), 1) then
+			-- vehenground = tonumber(string.format("%.2f", veheng))
+			-- vehbodround = tonumber(string.format("%.2f", vehbody))
 
-			DrawTxt("~r~Engine Health: ~s~"..vehenground, 0.015, 0.76)
+			-- DrawTxt("~r~Engine Health: ~s~"..vehenground, 0.015, 0.76)
 
-			DrawTxt("~r~Body Health: ~s~"..vehbodround, 0.015, 0.73)
+			-- DrawTxt("~r~Body Health: ~s~"..vehbodround, 0.015, 0.73)
 
-			DrawTxt("~r~Vehicle Fuel: ~s~"..tonumber(string.format("%.2f", GetVehicleFuelLevel(GetVehiclePedIsUsing(PlayerPedId())))), 0.015, 0.70)
-		end
+			-- DrawTxt("~r~Vehicle Fuel: ~s~"..tonumber(string.format("%.2f", GetVehicleFuelLevel(GetVehiclePedIsUsing(PlayerPedId())))), 0.015, 0.70)
+		-- end
     end
 end)
