@@ -60,7 +60,7 @@ end)
 
 ESX.RegisterServerCallback('esx_lscustom:getVehiclesPrices', function(source, cb)
 	if not Vehicles then
-		MySQL.Async.fetchAll('SELECT * FROM vehicles', {}, function(result)
+		MySQL.Async.fetchAll('SELECT * FROM vs_cars', {}, function(result)
 			local vehicles = {}
 
 			for i=1, #result, 1 do
