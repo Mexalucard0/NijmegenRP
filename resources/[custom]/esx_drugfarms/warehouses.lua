@@ -317,17 +317,6 @@ Citizen.CreateThread(function()
             end
         end
 
-        -- Money laundering point
-        DrawMarker(1, 1122.35, -3194.49, -40.4 - 1.0001, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0, 13, 232, 255, 155, 0, 0, 2, 0, 0, 0, 0)
-        if GetDistanceBetweenCoords(playerCoords.x, playerCoords.y, playerCoords.z, 1122.35, -3194.49, -40.4, true) <= 3.0 then
-            -- TriggerEvent("fs_freemode:displayHelp", i18n.translate("exit_warehouse"))
-            ESX.ShowHelpNotification(_U('press_to_launder_money'))
-            if IsControlPressed(0, 51) then
-                Citizen.Wait(500)
-                TriggerServerEvent('esx_drugs:launderMoney')
-            end
-        end
-
     end
 end)
 
