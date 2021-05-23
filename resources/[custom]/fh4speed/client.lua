@@ -14,7 +14,7 @@ RegisterKeyMapping('fh4speed', 'Enable or disable speedometer', 'keyboard', 'f10
 
 Citizen.CreateThread(function()
 	while true do
-		Wait(25)
+		Wait(10)
 
 		playerPed = GetPlayerPed(-1)
 		
@@ -67,14 +67,14 @@ Citizen.CreateThread(function()
 						PlayerID               = GetPlayerServerId(GetPlayerIndex())
 					})
 				else
-					Wait(10)
+					Wait(5)
 				end
 			else
 				SendNUIMessage({HideHud = true})
 			end
 		else
 			SendNUIMessage({HideHud = true})
-			Wait(100)
+			Wait(10)
 		end
 	end
 end)
